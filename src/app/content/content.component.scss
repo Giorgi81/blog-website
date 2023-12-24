@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+#container {
+    width: 100%;
+    flex-wrap:wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    padding: 50px;
+
+    .main-div {
+        width: 90%;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
+        img {
+            border-radius: 30px;
+        }
+
+        .content {
+            width: 50%;
+            height: 100%;
+            // background-color: rgb(17, 187, 17);
+            border-radius: 30px;
+            display: flex;
+            transition: 1s all;
+
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid white;
+            
+
+
+            .welcome-div {
+                width: 250px;
+                height: 100px;
+                 
+                h1 {
+                    font-size: 35px;
+                    font-family: 'Playfair Display', serif;
+                }
+            }
+
+            .caption {
+                width: 250px;
+                height: 100px;
+                font-family: 'Titillium Web', sans-serif;
+              font-size: 10px;
+                
+            }
+            .buttons-div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                button {
+                    width: 250px;
+                    height: 50px;
+                    background-color: transparent;
+                    outline: none;
+                    border-radius: 50px;
+                    text-align: center;
+                    margin-top: 10px;
+                    color: white;
+                    cursor: pointer;
+                    border: 2px solid white;
+                    transition: 0.2s all;
+
+                }
+                button:hover {
+                    border: none;
+                    background-color: black;
+                    transition: 0.2s all;
+                }
+
+                
+            }
+        }
+
+        .main {
+            width: 50%;
+            height: 100%;
+            // background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+
+        }
+
+
+    }
+
+}
+
+
+
+
+.hovered {
+    background-color: black;
+    color: white;
+  }
+
+.backBlack {
+    background-color: black;
+    color: white;
+ 
+
+  }
+
+@media only screen and (max-width: 1400px) {
+    #container {
+        display: flex;
+
+
+        .main-div {
+           display: block;
+           .main   {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+           }
+           .content {
+            width: 100%;
+           }
+         
+    }
+  
+  }
+
+  @media only screen and (max-width: 1000px) {
+    #container {
+        .main-div{
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+  }
+
+  @media only screen and (max-width: 900px) {
+    #container {
+        .main-div {
+            .main {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+    
+  }
+
+  @media only screen and (max-width: 650px) {
+    #container {
+        .main-div {
+            width: 300%;
+            .main {
+                
+                width: 100%;
+
+            
+            img {
+                width: 150px;
+            }
+        }
+        .content {
+            
+            .welcome-div {
+                h1 {
+                    font-size: 20px;
+                }
+               
+            }
+            
+        }
+        }
+       
+    }
+
+
+
+  }
+
+
+ 
+}
+
+
+@media only screen and (max-width: 500px) {
+    #container {
+        overflow-x: hidden;
+        .main-div {
+            .main {
+                padding: 50px;
+            }
+            .content {
+                padding: 50px;
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    #container {
+        .main-div {
+            .main {
+                padding: 150px;
+            }
+            .content {
+                padding: 150px;
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.backColor {
+    background-color:aqua;
+    transition: 1s all;
+
+
+  }
+
+
+ 
+ 
